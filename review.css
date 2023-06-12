@@ -1,0 +1,253 @@
+<!--/* REVIEW */
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	height: 280vh;
+	background-image: linear-gradient(rgba(63, 48, 22, 0.75),rgba(66, 50, 20, 0.75)),url(menubg.png);
+	background-size: cover;
+	background-position:left;
+	transition: 2s;
+	z-index: 100000;
+}
+body{
+	margin:0;
+	font-family: sans-serif;	
+}
+.sticky h3{
+	font-family: candara;
+	font-size: 25px;
+	color: #1f190c;
+}
+nav{ 
+	background-color:#7c5b14;
+	height: 100px;
+	width:100%;
+}
+div.sticky{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	background-color: #0f1610;
+}
+.logo{
+	background: transparent;
+	float: left;
+	width: 280px;
+	height: 130px;
+	padding-left: 10px;
+}
+.sub-menu{
+	display: none;
+}
+ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: transparent;
+}
+.sub-menu ul{
+	display: block;
+	margin: 5px;
+}
+.sub-menu ul li{
+	width: 300px;
+	padding: 10px;
+}
+.sub-menu ul li a{
+	border: none;
+}
+nav ul{
+	float: right;
+	margin-right: 40px;
+
+}
+nav ul li{
+	display: inline-block;
+	padding-top: 30px;
+	line-height: 40px;
+	margin-left: 0 5px;
+	position: relative;
+}
+nav ul li a{
+	color: white;
+	font-family: candara;
+	font-size:15px;
+	padding:15px 10px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+header ul li a{
+	float: left;
+	margin-left: 20px;
+	color: rgb(40, 196, 79);
+}
+ul li a:hover{
+	background-color: #1DA830;
+	color: #524405;
+}
+ul li.active a{
+	background-color: #1DA830;
+	transition: 0.5s;
+	color: #584204;
+}
+.checkbtn{
+	font-size: 30px;
+	color: rgb(31, 22, 12);
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	header.logoname{
+		font-size:25px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #E9EAE9;
+		top:100px;
+		left:-100%;
+		text-align: center;
+		transition: all .5s;	
+	}
+	nav ul li{
+		display: block;
+		margin: 20px 0;
+		line-height: 10px;
+	}
+	nav ul li a{
+		font-size: 20px;
+		color: black; 
+	}
+	a:hover,a.active{
+		background: none;
+		color: #1DA830;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+
+header{
+	float: left;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bgg.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 130px 0;
+}
+.clear{
+	clear: both;
+}
+body{
+    background-color: #967211;
+    color:rgb(20, 14, 7);
+}
+
+
+.review .review-slider {
+    padding: 5rem 0;
+}
+
+.review .review-slider .box {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    padding: 2rem;
+}
+
+.review .review-slider .box .fa-quote-left {
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+    font-size: 6rem;
+    color: rgb(27, 22, 9);
+    z-index: -1;
+}
+
+.review .review-slider .box .fa-quote-right {
+    position: absolute;
+    bottom: 2rem;
+    right: 2.5rem;
+    font-size: 6rem;
+    color: #ccc;
+    z-index: -1;
+}
+
+.review .review-slider .box:hover .fa-quote-left {
+    top: -6.5rem;
+}
+
+.review .review-slider .box:hover .fa-quote-right {
+    bottom: -6.5rem;
+}
+
+.review .review-slider .box img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: .7rem;
+}
+
+.review .review-slider .box .stars {
+    padding: .5rem 0
+}
+
+.review .review-slider .box .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.review .review-slider .box p {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.review .review-slider .box h3 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    line-height: 1.8;
+}
+
+.review .review-slider .box span {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.swiper-pagination-bullet {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+

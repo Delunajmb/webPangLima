@@ -1,0 +1,254 @@
+/* BOOK */
+
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	height: 200vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(home-bg.jpg);
+	background-size: cover;
+	background-position:center;
+	transition: 1s;
+	z-index: 100000;
+}
+body{
+	margin:0;
+	font-family: sans-serif;	
+}
+.sticky h3{
+	font-family: candara;
+	font-size: 25px;
+	color: #ffffff;
+}
+nav{ 
+	background-image:linear-gradient(rgba(68, 45, 3, 0.5),rgba(107, 62, 3, 0.5));
+	height: 100px;
+	width:100%;
+}
+div.sticky{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	background-color: #033E0B;
+}
+.logo{
+	background: transparent;
+	float: left;
+	width: 250px;
+	height: 100px;
+	padding-left: 10px;
+}
+.sub-menu{
+	display: none;
+}
+ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: transparent;
+}
+.sub-menu ul{
+	display: block;
+	margin: 5px;
+}
+.sub-menu ul li{
+	width: 300px;
+	padding: 10px;
+}
+.sub-menu ul li a{
+	border: none;
+}
+nav ul{
+	float: right;
+	margin-right: 40px;
+
+}
+nav ul li{
+	display: inline-block;
+	padding-top: 30px;
+	line-height: 40px;
+	margin-left: 0 5px;
+	position: relative;
+}
+nav ul li a{
+	color: white;
+	font-family: candara;
+	font-size:15px;
+	padding:15px 10px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+header ul li a{
+	float: left;
+	margin-left: 20px;
+	color: black;
+}
+ul li a:hover{
+	background-color: #1DA830;
+	color: #ffffff;
+}
+ul li.active a{
+	background-color: #1DA830;
+	transition: 0.5s;
+	color: #ffffff;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	header.logoname{
+		font-size:25px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #E9EAE9;
+		top:100px;
+		left:-100%;
+		text-align: center;
+		transition: all .5s;	
+	}
+	nav ul li{
+		display: block;
+		margin: 20px 0;
+		line-height: 10px;
+	}
+	nav ul li a{
+		font-size: 20px;
+		color: black; 
+	}
+	a:hover,a.active{
+		background: none;
+		color: #1DA830;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+header{
+	float: left;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bgg.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 130px 0;
+}
+.clear{
+	clear: both;
+}
+.section2{
+	float: left;
+	width: 100%;
+	background:transparent;
+	text-align: center;
+	padding: 50px 0;
+	margin-bottom: 2px;
+}
+.section2 .content{
+	float: left;
+	width: 200%;
+	margin-top: 2px;
+	
+}
+.book {
+    background: url(home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.book form {
+    margin: 0 auto 2rem auto;
+    max-width: 60rem;
+    border-radius: var(--border-radius-hover);
+    padding: 3rem;
+    border: var(--border);
+}
+
+.book form .box {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    background: none;
+    text-transform: none;
+    color: var(--main-color);
+    border: var(--border);
+    margin: .7rem 0;
+}
+
+.book form .box:focus {
+    border: var(--border-hover);
+}
+
+.book form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 1.5rem;
+	margin-top: 50px;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--main-color);
+    background-color: burlywood;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color:peru;
+    background: url(menu-bg.jpg) ;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    color: var(--main-color);
+}
+
+.footer .credit span {
+    border-bottom: var(--border-hover);
+}

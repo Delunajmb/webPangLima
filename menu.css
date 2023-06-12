@@ -1,0 +1,218 @@
+<!--/* MENU */
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg.jpg);
+	background-size: cover;
+	background-position:center;
+	transition: 1s;
+	z-index: 100000;
+}
+body{
+	margin:0;
+	font-family: sans-serif;	
+}
+.sticky h3{
+	font-family: candara;
+	font-size: 25px;
+	color: #ffffff;
+}
+nav{ 
+	background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(bg.jpg);
+	height: 100px;
+	width:100%;
+}
+div.sticky{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	background-color: #033E0B;
+}
+.logo{
+	background: transparent;
+	float: left;
+	width: 250px;
+	height: 100px;
+	padding-left: 10px;
+}
+.sub-menu{
+	display: none;
+}
+ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: transparent;
+}
+.sub-menu ul{
+	display: block;
+	margin: 5px;
+}
+.sub-menu ul li{
+	width: 300px;
+	padding: 10px;
+}
+.sub-menu ul li a{
+	border: none;
+}
+nav ul{
+	float: right;
+	margin-right: 40px;
+
+}
+nav ul li{
+	display: inline-block;
+	padding-top: 30px;
+	line-height: 40px;
+	margin-left: 0 5px;
+	position: relative;
+}
+nav ul li a{
+	color: white;
+	font-family: candara;
+	font-size:15px;
+	padding:15px 10px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+header ul li a{
+	float: left;
+	margin-left: 20px;
+	color: black;
+}
+ul li a:hover{
+	background-color: #1DA830;
+	color: #ffffff;
+}
+ul li.active a{
+	background-color: #1DA830;
+	transition: 0.5s;
+	color: #ffffff;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	header.logoname{
+		font-size:25px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #E9EAE9;
+		top:100px;
+		left:-100%;
+		text-align: center;
+		transition: all .5s;	
+	}
+	nav ul li{
+		display: block;
+		margin: 20px 0;
+		line-height: 10px;
+	}
+	nav ul li a{
+		font-size: 20px;
+		color: black; 
+	}
+	a:hover,a.active{
+		background: none;
+		color: #66580a;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+header{
+	float: left;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bgg.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 130px 0;
+}
+.clear{
+	clear: both;
+}
+.menu {
+    background: url(bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem;
+    justify-content: left;
+}
+
+.menu .box-container .box {
+    flex: 1 1 50rem;
+    padding: 3rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 5rem;
+}
+
+.menu .box-container .box:hover {
+    border: var(--border-hover);
+    border-radius: var(--border-radius-hover);
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+    margin-left: -6rem;
+    background-color: transparent;
+}
+
+.menu .box-container .box .content h1 {
+    font-size: 2.2rem;
+    color: rgb(37, 29, 17);
+    line-height: 1.8;
+}
+h1{
+    color: rgb(43, 25, 1);
+    font-size: 2.2rem;
+}
+
+.menu .box-container .box .content p {
+    font-size: 1rem;
+    color: rgb(65, 38, 3);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .content span {
+    font-size: 2rem;
+    color: var(--main-color);
+    line-height: 1.8;
+}
